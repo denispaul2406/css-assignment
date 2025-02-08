@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script defer src="cart.js"></script> <!-- For Quantity Updates -->
+</head>
+<body>
+    <header>
+        <h1>🛒 Shopping Cart</h1>
+    </header>
+
+    <section class="cart-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cart-item">
+                    <td>
+                        <div class="product">
+                            <img src="res/headphones.jpg" alt="Product 1">
+                            <span>Wireless Headphones</span>
+                        </div>
+                    </td>
+                    <td class="price">1200</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="total-price">1200</td>
+                    <td><button class="remove-btn">❌</button></td>
+                </tr>
+                <tr class="cart-item">
+                    <td>
+                        <div class="product">
+                            <img src="res/smart-watch.jpg" alt="Product 2">
+                            <span>Smart Watch</span>
+                        </div>
+                    </td>
+                    <td class="price">800</td>
+                    <td><input type="number" class="quantity" value="1" min="1"></td>
+                    <td class="total-price">800</td>
+                    <td><button class="remove-btn">❌</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Subtotal: <span id="subtotal">2000</span></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Shopping Cart | Designed by Denis Paul</p>
+    </footer>
+</body>
+</html>

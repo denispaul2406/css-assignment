@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Garamond', serif;
+    background-color: #fff8e1; /* Warm Luxury Background */
+    color: #4a2c2a; /* Deep Brown Text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #8b0000; /* Deep Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: gold;
+    color: #8b0000;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/restaurant-banner.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: gold;
+}
+
+.hero p {
+    font-size: 20px;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: gold;
+    color: #8b0000;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d4af37; /* Brighter Gold */
+}
+
+/* Specialties Section */
+.specialties {
+    padding: 40px;
+    text-align: center;
+}
+
+.specialty-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.specialty-item {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.specialty-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Menu Page */
+.menu-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 22px;
+    color: #8b0000;
+}
+
+.menu-item p {
+    font-size: 18px;
+    color: #4a2c2a;
+}
+
+/* About Page */
+.about-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Contact Page */
+.contact-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #4a2c2a;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #8b0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: gold;
+    color: #8b0000;
+}
+
+/* Reservation Section */
+.reservation {
+    text-align: center;
+    padding: 50px;
+    background: #8b0000;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #4a2c2a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .specialty-grid, .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item, .specialty-item {
+        width: 90%;
+    }
+}
